@@ -73,7 +73,7 @@ namespace RestTemplateCore
                 {
                     foreach (var header in requestHeaders)
                     {
-                        requestHeaders.Add(header.Key, header.Value);
+                        requestMsg.Headers.Add(header.Key, header.Value);
                     }
                 }
                 requestMsg.Method = System.Net.Http.HttpMethod.Get;
@@ -100,7 +100,7 @@ namespace RestTemplateCore
                 {
                     foreach (var header in requestHeaders)
                     {
-                        requestHeaders.Add(header.Key, header.Value);
+                        requestMsg.Headers.Add(header.Key, header.Value);
                     }
                 }
                 requestMsg.Method = System.Net.Http.HttpMethod.Post;
@@ -128,7 +128,7 @@ namespace RestTemplateCore
                 {
                     foreach (var header in requestHeaders)
                     {
-                        requestHeaders.Add(header.Key, header.Value);
+                        requestMsg.Headers.Add(header.Key, header.Value);
                     }
                 }
                 requestMsg.Method = System.Net.Http.HttpMethod.Post;
@@ -158,7 +158,7 @@ namespace RestTemplateCore
                 {
                     foreach (var header in requestHeaders)
                     {
-                        requestHeaders.Add(header.Key, header.Value);
+                        requestMsg.Headers.Add(header.Key, header.Value);
                     }
                 }
                 requestMsg.Method = System.Net.Http.HttpMethod.Put;
@@ -187,7 +187,7 @@ namespace RestTemplateCore
                 {
                     foreach (var header in requestHeaders)
                     {
-                        requestHeaders.Add(header.Key, header.Value);
+                        requestMsg.Headers.Add(header.Key, header.Value);
                     }
                 }
                 requestMsg.Method = System.Net.Http.HttpMethod.Put;
@@ -216,7 +216,7 @@ namespace RestTemplateCore
                 {
                     foreach (var header in requestHeaders)
                     {
-                        requestHeaders.Add(header.Key, header.Value);
+                        requestMsg.Headers.Add(header.Key, header.Value);
                     }
                 }
                 requestMsg.Method = System.Net.Http.HttpMethod.Delete;
@@ -241,7 +241,7 @@ namespace RestTemplateCore
                 {
                     foreach (var header in requestHeaders)
                     {
-                        requestHeaders.Add(header.Key, header.Value);
+                        requestMsg.Headers.Add(header.Key, header.Value);
                     }
                 }
                 requestMsg.Method = System.Net.Http.HttpMethod.Delete;
