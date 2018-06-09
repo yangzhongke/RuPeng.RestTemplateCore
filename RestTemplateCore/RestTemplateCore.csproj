@@ -6,6 +6,7 @@
     <Company>rupeng.com</Company>
     <PackageProjectUrl>http://www.rupeng.com</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
