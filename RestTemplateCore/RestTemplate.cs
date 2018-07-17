@@ -263,7 +263,7 @@ namespace RestTemplateCore
             var result = await httpClient.SendAsync(requestMsg);
             RestResponseWithBody<T> respEntity = new RestResponseWithBody<T>();
             respEntity.StatusCode = result.StatusCode;
-            respEntity.Headers = respEntity.Headers;
+            respEntity.Headers = result.Headers;
             String bodyStr = await result.Content.ReadAsStringAsync();
             if(!string.IsNullOrWhiteSpace(bodyStr))
             {
