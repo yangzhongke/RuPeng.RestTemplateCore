@@ -1,3 +1,6 @@
 # RuPeng.RestTemplateCore
+Technology stack: C#, .Net Core, Consul
 
-模仿Java中的RestTemplate实现的自动到Consul中进行服务解析和简单负载均衡，自动把http://ProductService/api/Product/这样用服务名字的虚拟路径转换为http://192.168.1.21:5000/api/Product/这样实际的地址
+Description: It is a service locator of microservice architecture, which can resolve service name to a real server address.
+
+Just like RestTemplate in the Spring Cloud, RestTemplateCore can resolve the service name in Consul to the physical address, for example: http://ProductService/api/Product/ --> http://192.168.1.21:5000/api/Product/
