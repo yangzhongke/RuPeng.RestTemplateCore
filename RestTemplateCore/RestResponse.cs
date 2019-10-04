@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 namespace RestTemplateCore
 {
     /// <summary>
-    /// Rest响应结果
+    /// Result
     /// </summary>
     public class RestResponse
     {

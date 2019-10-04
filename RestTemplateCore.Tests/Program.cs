@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Net.Http;
-using System.Net.Http.Headers;
 
 namespace RestTemplateCore.Tests
 {
@@ -13,7 +12,7 @@ namespace RestTemplateCore.Tests
             {
                 RestTemplate rest = new RestTemplate(httpClient);
 
-                Console.WriteLine("---查询数据---------");
+                Console.WriteLine("---querying---------");
                 var headers = new HttpRequestMessage().Headers;
                 headers.Add("aa", "666");
                 var ret1 = rest.GetForEntityAsync<Product[]>("http://ProductService/api/Product/", headers).Result;
@@ -26,10 +25,10 @@ namespace RestTemplateCore.Tests
                     }
                 }
 
-                Console.WriteLine("---新增数据---------");
+                Console.WriteLine("---add new---------");
                 Product newP = new Product();
                 newP.Id = 888;
-                newP.Name = "辛增";
+                newP.Name = "xinzeng";
                 newP.Price = 88.8;
                 var ret = rest.PostAsync("http://ProductService/api/Product/", newP).Result;
                 Console.WriteLine(ret.StatusCode);
