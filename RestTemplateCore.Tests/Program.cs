@@ -10,7 +10,7 @@ namespace RestTemplateCore.Tests
            
             using (HttpClient httpClient = new HttpClient())
             {
-                RestTemplate rest = new RestTemplate(httpClient);
+                RestTemplate rest = new RestTemplate(httpClient, "http://127.0.0.1:8500");
 
                 Console.WriteLine("---querying---------");
                 var headers = new HttpRequestMessage().Headers;

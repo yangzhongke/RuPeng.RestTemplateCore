@@ -15,12 +15,13 @@ namespace RestTemplateCore
     /// </summary>
     public class RestTemplate
     {
-        public String ConsulServerUrl { get; set; }= "http://127.0.0.1:8500";
+        public String ConsulServerUrl { get; private set; }
         private HttpClient httpClient;
 
-        public RestTemplate(HttpClient httpClient)
+        public RestTemplate(HttpClient httpClient,string consulServerUrl)
         {
             this.httpClient = httpClient;
+            this.ConsulServerUrl = consulServerUrl;
         }
 
         /// <summary>
